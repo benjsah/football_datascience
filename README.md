@@ -1,6 +1,3 @@
-# Football Data Science
-Project of football analytics using data science methods
-
 # Football Data Science Repository
 
 Welcome to the Football Data Science Repository! This repository is a central hub for data science projects related to football. Our goal is to provide a valuable resource for the community, especially for aspiring data scientists in the field of football analytics.
