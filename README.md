@@ -10,17 +10,14 @@ This repository contains a collection of data science projects, analyses, and mo
 
 Project Name | Description | Technologies Used
 ------------ | ----------- | -------------------
-[Player Performance Analysis](link_to_project) | Analyzing player performance metrics to evaluate and compare players. | Python, Pandas, Matplotlib
-[Match Outcome Prediction](link_to_project) | Predicting match outcomes using historical data and machine learning models. | Python, Scikit-learn, TensorFlow
-[Team Formation Analysis](link_to_project) | Studying the impact of different team formations on match results. | Python, Pandas, Seaborn
-[Sentiment Analysis of Fan Reactions](link_to_project) | Analyzing social media data to gauge fan sentiment and reactions. | Python, NLTK, TextBlob
+following soon | |
 
 ## Getting Started
 
 To get started with the projects in this repository, follow these steps:
 
 1. Clone the Repository:
-git clone https://github.com/yourusername/football-data-science.git
+git clone https://github.com/benjsah/football-data-science.git
 
 2. Install Dependencies:
 Navigate to the project directory and install the required dependencies:
@@ -54,6 +51,6 @@ This repository is licensed under the MIT License. You are free to use, modify, 
 
 ## Contact
 
-If you have any questions or suggestions, feel free to open an issue or contact us at your-email@example.com.
+If you have any questions or suggestions, feel free to open an issue or contact us at benjamin.sahel@pm.me.
 
 Happy coding and enjoy exploring the world of football data science!
