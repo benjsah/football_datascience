@@ -1,0 +1,58 @@
+league:
+  name: "English Premier League"
+  country: "England"
+  matches_per_team: 38
+  current_season: 2025
+
+data_sources:
+  all_matches:
+    url: "URL to fixture data"
+    filename: "epl-2025.csv"
+  match_statistics:
+    url: "URL to match statistics"
+    filename: "premierleague_2025.csv"
+
+columns:
+  all_matches:
+    home_team: "Home Team"
+    away_team: "Away Team"
+    result: "Result"
+    round_number: "Round Number"
+  match_stats:
+    date: "Date"
+    home_team: "HomeTeam"
+    away_team: "AwayTeam"
+    home_goals: "FTHG"
+    away_goals: "FTAG"
+    result: "FTR"
+    home_shots: "HS"
+    away_shots: "AS"
+    home_shots_on_target: "HST"
+    away_shots_on_target: "AST"
+
+team_name_mapping:
+  "Arsenal": "Arsenal"
+  "Aston Villa": "Aston Villa"
+  "Bournemouth": "Bournemouth"
+  "Brentford": "Brentford"
+  "Brighton": "Brighton"
+  "Burnley": "Burnley"
+  "Chelsea": "Chelsea"
+  "Crystal Palace": "Crystal Palace"
+  "Everton": "Everton"
+  "Fulham": "Fulham"
+  "Leeds": "Leeds"
+  "Liverpool": "Liverpool"
+  "Man City": "Man City"
+  "Man United": "Man Utd"
+  "Newcastle": "Newcastle"  
+  "Nott'm Forest": "Nott'm Forest"
+  "Sunderland": "Sunderland"
+  "Tottenham": "Spurs"
+  "West Ham": "West Ham"
+  "Wolves": "Wolves" 
+  # Add all team name mappings here
+
+simulation:
+  n_simulations: 1000
+  random_seed: 42
