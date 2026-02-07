@@ -1,0 +1,55 @@
+league:
+  name: "Bundesliga"
+  country: "Germany"
+  matches_per_team: 34
+  current_season: 2025
+
+data_sources:
+  all_matches:
+    url: "https://fixturedownload.com/results/bundesliga-2025"
+    filename: "bundesliga-2025-UTC.csv"
+  match_statistics:
+    url: "https://www.football-data.co.uk/germanym.php"
+    filename: "Bundesliga_2025.csv"
+
+columns:
+  all_matches:
+    home_team: "Home Team"
+    away_team: "Away Team"
+    result: "Result"
+    round_number: "Round Number"
+  match_stats:
+    date: "Date"
+    home_team: "HomeTeam"
+    away_team: "AwayTeam"
+    home_goals: "FTHG"
+    away_goals: "FTAG"
+    result: "FTR"
+    home_shots: "HS"
+    away_shots: "AS"
+    home_shots_on_target: "HST"
+    away_shots_on_target: "AST"
+
+team_name_mapping:
+  "Heidenheim": "1. FC Heidenheim 1846"
+  "FC Koln": "1. FC Köln"
+  "Union Berlin": "1. FC Union Berlin"
+  "Mainz": "1. FSV Mainz 05"
+  "Leverkusen": "Bayer 04 Leverkusen"
+  "Dortmund": "Borussia Dortmund"
+  "M'gladbach": "Borussia Mönchengladbach"
+  "Ein Frankfurt": "Eintracht Frankfurt"
+  "Augsburg": "FC Augsburg"
+  "Bayern Munich": "FC Bayern München"
+  "St Pauli": "FC St. Pauli"
+  "Hamburg": "Hamburger SV"
+  "RB Leipzig": "RB Leipzig"
+  "Werder Bremen": "SV Werder Bremen"
+  "Freiburg": "Sport-Club Freiburg"
+  "Hoffenheim": "TSG Hoffenheim"
+  "Stuttgart": "VfB Stuttgart"
+  "Wolfsburg": "VfL Wolfsburg"
+
+simulation:
+  n_simulations: 1000
+  random_seed: 42

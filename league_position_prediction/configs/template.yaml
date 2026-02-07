@@ -1,0 +1,39 @@
+league:
+  name: "League Name"
+  country: "Country"
+  matches_per_team: 34
+  current_season: 2025
+
+data_sources:
+  all_matches:
+    url: "URL to fixture data"
+    filename: "filename.csv"
+  match_statistics:
+    url: "URL to match statistics"
+    filename: "filename.csv"
+
+columns:
+  all_matches:
+    home_team: "Home Team Column Name"
+    away_team: "Away Team Column Name"
+    result: "Result Column Name"
+    round_number: "Round Number Column Name"
+  match_stats:
+    date: "Date Column Name"
+    home_team: "Home Team Column Name"
+    away_team: "Away Team Column Name"
+    home_goals: "Home Goals Column Name"
+    away_goals: "Away Goals Column Name"
+    result: "Result Column Name"
+    home_shots: "Home Shots Column Name"
+    away_shots: "Away Shots Column Name"
+    home_shots_on_target: "Home Shots on Target Column Name"
+    away_shots_on_target: "Away Shots on Target Column Name"
+
+team_name_mapping:
+  "source_team_name": "standardized_team_name"
+  # Add all team name mappings here
+
+simulation:
+  n_simulations: 1000
+  random_seed: 42
