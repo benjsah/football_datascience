@@ -10,7 +10,7 @@ This repository contains a collection of data science projects, analyses, and mo
 
 Project Name | Description | Technologies Used
 ------------ | ----------- | -------------------
-following soon | |
+League Position Prediction | Predicting the most likely position of each team at the end of the season | Poisson Model for individual match results & Monte Carlo Simulation of seasn
 
 ## Getting Started
 
