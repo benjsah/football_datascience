@@ -1,0 +1,55 @@
+league:
+  name: "Ligue 1"
+  country: "France"
+  matches_per_team: 34
+  current_season: 2025
+
+data_sources:
+  all_matches:
+    url: "https://fixturedownload.com/results/ligue-1-2025"
+    filename: "ligue-1-2025-UTC.csv"
+  match_statistics:
+    url: "URL to match statistics"
+    filename: "ligue1_2025.csv"
+
+columns:
+  all_matches:
+    home_team: "Home Team"
+    away_team: "Away Team"
+    result: "Result"
+    round_number: "Round Number"
+  match_stats:
+    date: "Date"
+    home_team: "HomeTeam"
+    away_team: "AwayTeam"
+    home_goals: "FTHG"
+    away_goals: "FTAG"
+    result: "FTR"
+    home_shots: "HS"
+    away_shots: "AS"
+    home_shots_on_target: "HST"
+    away_shots_on_target: "AST"
+
+team_name_mapping:
+  "Auxerre": "AJ Auxerre"
+  "Monaco": "AS Monaco"
+  "Angers": "Angers SCO"
+  "Lorient": "FC Lorient"
+  "Metz": "FC Metz"
+  "Nantes": "FC Nantes"
+  "Le Havre": "Havre Athletic Club"
+  "Lille": "LOSC Lille"
+  "Nice": "OGC Nice"
+  "Lyon": "Olympique Lyonnais"
+  "Marseille": "Olympique de Marseille"
+  "Paris FC": "Paris FC"
+  "Paris SG": "Paris Saint-Germain"
+  "Lens": "RC Lens"
+  "Strasbourg": "RC Strasbourg Alsace"
+  "Brest": "Stade Brestois 29"
+  "Rennes": "Stade Rennais FC"
+  "Toulouse": "Toulouse FC"
+
+simulation:
+  n_simulations: 1000
+  random_seed: 42

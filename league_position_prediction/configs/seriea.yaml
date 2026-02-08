@@ -1,0 +1,57 @@
+league:
+  name: "Serie A"
+  country: "Italy"
+  matches_per_team: 3438
+  current_season: 2025
+
+data_sources:
+  all_matches:
+    url: "https://fixturedownload.com/results/serie-a-2025"
+    filename: "serie-a-2025-UTC.csv"
+  match_statistics:
+    url: "URL to match statistics"
+    filename: "serieA_2025.csv"
+
+columns:
+  all_matches:
+    home_team: "Home Team"
+    away_team: "Away Team"
+    result: "Result"
+    round_number: "Round Number"
+  match_stats:
+    date: "Date"
+    home_team: "HomeTeam"
+    away_team: "AwayTeam"
+    home_goals: "FTHG"
+    away_goals: "FTAG"
+    result: "FTR"
+    home_shots: "HS"
+    away_shots: "AS"
+    home_shots_on_target: "HST"
+    away_shots_on_target: "AST"
+
+team_name_mapping:
+  "Atalanta": "Atalanta"
+  "Bologna": "Bologna"
+  "Cagliari": "Cagliari"
+  "Como": "Como"
+  "Cremonese": "Cremonese"
+  "Fiorentina": "Fiorentina"
+  "Genoa": "Genoa"
+  "Verona": "Hellas Verona"
+  "Inter": "Inter"
+  "Juventus": "Juventus"
+  "Lazio": "Lazio"
+  "Lecce": "Lecce"
+  "Milan": "Milan"
+  "Napoli": "Napoli"
+  "Parma": "Parma"
+  "Pisa": "Pisa"
+  "Roma": "Roma"
+  "Sassuolo": "Sassuolo"
+  "Torino": "Torino"
+  "Udinese": "Udinese"
+
+simulation:
+  n_simulations: 1000
+  random_seed: 42
