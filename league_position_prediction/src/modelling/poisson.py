@@ -40,11 +40,17 @@ def calculate_expected_goals(
 
     # Calculate expected goals
     expected_home_goals = (
-        home_team_stats["avg_home_shots_made"] * home_attack_eff * (away_defense_eff)
+        home_team_stats["avg_home_shots_made"]
+        * away_team_stats["away_chance_suppression_eff"]
+        * home_attack_eff
+        * away_defense_eff
     )
 
     expected_away_goals = (
-        away_team_stats["avg_away_shots_made"] * away_attack_eff * (home_defense_eff)
+        away_team_stats["avg_away_shots_made"]
+        * home_team_stats["home_chance_suppression_eff"]
+        * away_attack_eff
+        * home_defense_eff
     )
 
     return expected_home_goals, expected_away_goals

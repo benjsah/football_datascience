@@ -93,6 +93,8 @@ def calculate_efficiency_metrics(
     Calculate attacking and defensive efficiency metrics for teams.
 
     Efficiency is calculated as:
+    - Chance creation efficiency = shots made / league average shots made
+    - Chance suppression efficiency = shots conceded / league average shots conceded
     - Attacking efficiency = goals scored / shots made
     - Defensive efficiency = goals conceded / shots conceded
 
@@ -106,7 +108,28 @@ def calculate_efficiency_metrics(
     home_stats = home_stats.copy()
     away_stats = away_stats.copy()
 
+    # Calculate league averages for shots made and conceded
+    league_avg_home_shots_made = home_stats["avg_home_shots_made"].mean()
+    league_avg_home_shots_conceded = home_stats["avg_home_shots_conceded"].mean()
+    league_avg_away_shots_made = away_stats["avg_away_shots_made"].mean()
+    league_avg_away_shots_conceded = away_stats["avg_away_shots_conceded"].mean()
+
+    # Calculate chance creation and suppression efficiency for home and away teams compared to league averages
     # Avoid division by zero
+    home_stats["home_chance_creation_eff"] = (
+        home_stats["avg_home_shots_made"] / league_avg_away_shots_made
+    )
+    home_stats["home_chance_suppression_eff"] = (
+        home_stats["avg_home_shots_conceded"] / league_avg_away_shots_conceded
+    )
+    away_stats["away_chance_creation_eff"] = (
+        away_stats["avg_away_shots_made"] / league_avg_home_shots_made
+    )
+    away_stats["away_chance_suppression_eff"] = (
+        away_stats["avg_away_shots_conceded"] / league_avg_home_shots_conceded
+    )
+
+    # Calculate attacking and defensive efficiency
     home_stats["home_attack_eff"] = home_stats["avg_home_goals_scored"] / home_stats[
         "avg_home_shots_made"
     ].replace(0, np.nan)
